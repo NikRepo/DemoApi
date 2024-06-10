@@ -95,12 +95,19 @@ curl -X POST http://ip-address:5000/api/data \-H "Content-Type: application/json
 Payload body:
 
 {
-  "id": "60d5f484f1b8e5d2b0f2b0b3",
   "name": "New Item",
   "description": "Description for the new item",
   "price": 15.0
 }
 
+Response:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "New Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
 **********************************************************************
 
 Retrieve a Specific Item by ID:
