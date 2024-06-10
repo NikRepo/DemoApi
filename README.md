@@ -54,15 +54,18 @@ Place it in root directory where the .sln file is present
 
 docker build -t DemoApiImage .
 
-5. Run the docket continer
+5. Run the docket continer:
 docker run -d -p 5000:80 --name container01 DemoApiImage
 ----------------------------------------------------------------------------------------------------------------
 API Endpoints
-API Endpoints
- POST api/data: Accepts a JSON object and stores it in the database.
- GET api/data/{id}: Retrieves the JSON object associated with the given ID from the database.
- PUT api/data/{id}: Updates the existing JSON object with the given ID in the database.
- DELETE api/data/{id}: Deletes the JSON object with the given ID from the database.
+
+POST api/data: Accepts a JSON object and stores it in the database.
+
+GET api/data/{id}: Retrieves the JSON object associated with the given ID from the database.
+
+PUT api/data/{id}: Updates the existing JSON object with the given ID in the database.
+
+DELETE api/data/{id}: Deletes the JSON object with the given ID from the database.
 
 
 
