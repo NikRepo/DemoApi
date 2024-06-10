@@ -2,7 +2,7 @@
 
 This project is a .NET 8 Web API that demonstrates schema-less CRUD (Create, Read, Update, Delete) operations using MongoDB Atlas. The application is containerized using Docker and is designed to be deployed on a Linux environment.
 
-API that allows storing and retrieving JSON data without a predefined schema. The data should be persisted in
+API that allows storing and retrieving JSON data without a predefined schema. The data is persisted in
 a MongoDb Atlas database.
 
 ------------------------------------------------------------------------------------------------------
