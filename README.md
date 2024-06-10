@@ -8,22 +8,31 @@ a MongoDb Atlas database.
 ------------------------------------------------------------------------------------------------------
 Prerequisites
 ------------------------------------------------------------------------------------------------------
+
 .NET 8 SDK
 Docker
 MongoDB Atlas account and cluster
 Linux environment for deployment
+
 -------------------------------------------------------------------------------------------------------
 Setup Instructions:
 --------------------------------------------------------------------------------------------------------
+
 1. Clone the Repository
 git clone https://github.com/NikRepo/DemoApi.git
+
 cd DemoApi
 
-2. Configure MongoDB Atlas
+3. Configure MongoDB Atlas
+   
    Create a MongoDB Atlas account if you don't have one.
+   
    Create a new cluster.
+   
    Get the connection string from MongoDB Atlas.
+   
    Replace the <Your MongoDB Connection String> in the appsettings.json file with your MongoDB connection string.
+   
    Replace Database name and Collection name in appsettings.json
 
 3.Update appsettings.json
@@ -46,18 +55,25 @@ cd DemoApi
 ----------------------------------------------------------------------------
 Deployment on Linux
 ----------------------------------------------------------------------------
+
 Ensure Docker is installed and running on your Linux machine.
 Copy the Docker image to your Linux machine or build it directly on the machine.
 
 4.Using Docker - Build Image(go to directory of docker file)
+
 Place it in root directory where the .sln file is present
 
 docker build -t DemoApiImage .
 
 5. Run the docket continer:
+   
 docker run -d -p 5000:80 --name container01 DemoApiImage
+
 ----------------------------------------------------------------------------------------------------------------
+
 API Endpoints
+
+----------------------------------------------------------------------------------------------------------------
 
 POST api/data: Accepts a JSON object and stores it in the database.
 
