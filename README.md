@@ -20,14 +20,27 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
 2. Configure MongoDB Atlas
-Create a MongoDB Atlas account if you don't have one.
-Create a new cluster.
-Get the connection string from MongoDB Atlas.
-Replace the <Your MongoDB Connection String> in the appsettings.json file with your MongoDB connection string.
-Replace Database name and Collection name in appsettings.json
+   Create a MongoDB Atlas account if you don't have one.
+   Create a new cluster.
+   Get the connection string from MongoDB Atlas.
+   Replace the <Your MongoDB Connection String> in the appsettings.json file with your MongoDB connection string.
+   Replace Database name and Collection name in appsettings.json
 
 3.Update appsettings.json
-
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "MongoDb": {
+    "ConnectionString": "mongodb+srv://username:password@cluster5.qfcy0b5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster5",
+    "Database": "DemoApi",
+    "Collection": "DemoCollection"
+  },
+  "AllowedHosts": "*"
+}
 
 
 ----------------------------------------------------------------------------
