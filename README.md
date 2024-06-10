@@ -83,6 +83,82 @@ PUT api/data/{id}: Updates the existing JSON object with the given ID in the dat
 
 DELETE api/data/{id}: Deletes the JSON object with the given ID from the database.
 
+------------------------------------------------------------------------------------------------------------------
+Example - curl
+-----------------------------------------------------------------------------------------------------------------
+
+**********************************************************************
+Create a New Item:
+
+curl -X POST http://ip-address:5000/api/data \-H "Content-Type: application/json" \-d '{  "name": "New Item",  "description": "Description for the new item",  "price": 15.0}'
+
+Payload body:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "New Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
+
+**********************************************************************
+
+Retrieve a Specific Item by ID:
+
+curl -X GET http://ip-address:5000/api/data/60d5f484f1b8e5d2b0f2b0b3
+
+Response:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "New Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
+**********************************************************************
+
+**********************************************************************
+
+Update a Specific Item by ID:
+
+curl -X PUT http://ip-address:5000/api/data/60d5f484f1b8e5d2b0f2b0b3
+
+Payload body:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "Modified Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
+
+Response:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "Modified Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
+**********************************************************************
+
+**********************************************************************
+
+Delete a Specific Item by ID:
+
+curl -X DELETE http://ip-address:5000/api/data/60d5f484f1b8e5d2b0f2b0b3
+
+Response:
+
+{
+  "id": "60d5f484f1b8e5d2b0f2b0b3",
+  "name": "New Item",
+  "description": "Description for the new item",
+  "price": 15.0
+}
+**********************************************************************
+
+
 
 
 
