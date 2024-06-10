@@ -16,8 +16,8 @@ Linux environment for deployment
 Setup Instructions:
 --------------------------------------------------------------------------------------------------------
 1. Clone the Repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/NikRepo/DemoApi.git
+cd DemoApi
 
 2. Configure MongoDB Atlas
    Create a MongoDB Atlas account if you don't have one.
